@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Lights Categories Pakistan | Chandeliers, Ceiling Lights, Rope Lights - QMRE Lights</title>
+    <meta name="description" content="Browse LED lights by category in Pakistan. Shop chandeliers, ceiling lights, rope lights, LED bulbs & switches. Best prices with fast delivery across Pakistan.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <i class="fas fa-lightbulb text-warning me-2"></i>
+                QMRE Lights
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-th-large me-1"></i>Categories
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-modern">
+                            <li><a class="dropdown-item" href="/category/chandeliers">
+                                <i class="fas fa-crown me-2"></i>Chandeliers
+                            </a></li>
+                            <li><a class="dropdown-item" href="/category/ceiling-lights">
+                                <i class="fas fa-lightbulb me-2"></i>Ceiling Lights
+                            </a></li>
+                            <li><a class="dropdown-item" href="/category/rope-lights">
+                                <i class="fas fa-lightbulb me-2"></i>Rope Lights
+                            </a></li>
+                            <li><a class="dropdown-item" href="/category/switches">
+                                <i class="fas fa-toggle-on me-2"></i>Switches
+                            </a></li>
+                            <li><a class="dropdown-item" href="/category/bulbs">
+                                <i class="fas fa-lightbulb me-2"></i>LED Bulbs
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/category/all">
+                                <i class="fas fa-th me-2"></i>View All Categories
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cartIcon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-danger" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Header -->
+    <section class="category-header py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" id="categoryBreadcrumb">Categories</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-3" id="categoryTitle">All Categories</h1>
+                    <p class="lead text-muted" id="categoryDescription">Discover our complete collection of premium lighting solutions</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="category-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="productCount">0</span>
+                            <span class="stat-label">Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Content -->
+    <section class="category-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3">
+                    <div class="sidebar-filters">
+                        <div class="filter-card">
+                            <h5 class="filter-title">
+                                <i class="fas fa-filter me-2"></i>Filters
+                            </h5>
+                            
+                            <!-- Category Filter -->
+                            <div class="filter-group">
+                                <h6>Categories</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="filterChandeliers" value="chandeliers">
+                                    <label class="form-check-label" for="filterChandeliers">
+                                        <i class="fas fa-crown me-2"></i>Chandeliers
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="filterCeilingLights" value="ceiling-lights">
+                                    <label class="form-check-label" for="filterCeilingLights">
+                                        <i class="fas fa-lightbulb me-2"></i>Ceiling Lights
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="filterRopeLights" value="rope-lights">
+                                    <label class="form-check-label" for="filterRopeLights">
+                                        <i class="fas fa-lightbulb me-2"></i>Rope Lights
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="filterSwitches" value="switches">
+                                    <label class="form-check-label" for="filterSwitches">
+                                        <i class="fas fa-toggle-on me-2"></i>Switches
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="filterBulbs" value="bulbs">
+                                    <label class="form-check-label" for="filterBulbs">
+                                        <i class="fas fa-lightbulb me-2"></i>LED Bulbs
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Price Filter -->
+                            <div class="filter-group">
+                                <h6>Price Range</h6>
+                                <div class="price-slider">
+                                    <input type="range" class="form-range" id="priceRange" min="0" max="50000" step="1000">
+                                    <div class="price-labels">
+                                        <span>Rs. 0</span>
+                                        <span id="priceValue">Rs. 25,000</span>
+                                        <span>Rs. 50,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Rating Filter -->
+                            <div class="filter-group">
+                                <h6>Rating</h6>
+                                <div class="rating-filters">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rating5" value="5">
+                                        <label class="form-check-label" for="rating5">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <span class="ms-2">5 Stars</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rating4" value="4">
+                                        <label class="form-check-label" for="rating4">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                            <span class="ms-2">4+ Stars</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rating3" value="3">
+                                        <label class="form-check-label" for="rating3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                            <span class="ms-2">3+ Stars</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Clear Filters -->
+                            <button class="btn btn-outline-primary w-100 mt-3" onclick="clearAllFilters()">
+                                <i class="fas fa-refresh me-2"></i>Clear All Filters
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Toolbar -->
+                    <div class="toolbar mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="search-box">
+                                    <input type="text" class="form-control" id="categorySearch" placeholder="Search products...">
+                                    <i class="fas fa-search search-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="toolbar-actions">
+                                    <select class="form-select" id="sortSelect">
+                                        <option value="">Sort By</option>
+                                        <option value="price-low">Price: Low to High</option>
+                                        <option value="price-high">Price: High to Low</option>
+                                        <option value="name">Name: A to Z</option>
+                                        <option value="rating">Highest Rated</option>
+                                        <option value="newest">Newest First</option>
+                                    </select>
+                                    <div class="view-toggle">
+                                        <button class="btn btn-outline-secondary active" onclick="setViewMode('grid')">
+                                            <i class="fas fa-th"></i>
+                                        </button>
+                                        <button class="btn btn-outline-secondary" onclick="setViewMode('list')">
+                                            <i class="fas fa-list"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Products Grid -->
+                    <div class="products-container">
+                        <div class="row g-4" id="categoryProductsGrid">
+                            <!-- Products will be loaded here -->
+                        </div>
+                        
+                        <!-- Load More -->
+                        <div class="text-center mt-5">
+                            <button class="btn btn-outline-primary btn-lg" id="loadMoreBtn" onclick="loadMoreCategoryProducts()">
+                                <i class="fas fa-plus me-2"></i>Load More Products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Content Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="content-card p-4 p-md-5 bg-white rounded-3 shadow-sm" id="categorySeoContent">
+                <!-- SEO-rich content loaded dynamically by category.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-shopping-cart me-2"></i>Shopping Cart
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="cartModalBody">
+                    <!-- Cart items will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-between w-100">
+                        <h5>Total: <span id="cartTotal">Rs. 0</span></h5>
+                        <button class="btn btn-primary" onclick="proceedToCheckout()">
+                            <i class="fas fa-credit-card me-2"></i>Proceed to Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="category.js"></script>
+</body>
+</html> 
