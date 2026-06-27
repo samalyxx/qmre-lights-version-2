@@ -11,22 +11,37 @@
     <meta property="og:description" content="Best LED lights price in Pakistan. Shop premium LED bulbs, ceiling lights, rope lights & chandeliers with fast delivery across Pakistan. Energy-efficient lighting solutions.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qmrelights.com">
-    
-    <title>LED Lights Price in Pakistan | LED Bulbs, Ceiling Lights & Rope Lights - QMRE Lights</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
+
+    <title>QMRE Lights | Illuminate Your World With Elegance</title>
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
-    <!-- Structured Data for SEO -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#d4af37',
+                            dark: '#1a1a1a',
+                            card: '#242424',
+                            muted: '#a0a0a0'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -44,284 +59,182 @@
         "paymentAccepted": "Cash, JazzCash, EasyPaisa",
         "currenciesAccepted": "PKR",
         "openingHours": "Mo-Sa 09:00-20:00",
-        "priceRange": "Rs. 150 - Rs. 50,000",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "LED Lighting Products",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Product",
-                        "name": "LED Bulbs",
-                        "description": "Energy efficient LED bulbs starting from Rs. 150"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Product",
-                        "name": "Ceiling Lights",
-                        "description": "Modern ceiling lights starting from Rs. 1,200"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Product",
-                        "name": "Rope Lights",
-                        "description": "Flexible LED rope lights from Rs. 300 per meter"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Product",
-                        "name": "Chandeliers",
-                        "description": "Premium LED chandeliers for elegant lighting"
-                    }
-                }
-            ]
-        }
+        "priceRange": "Rs. 150 - Rs. 50,000"
     }
     </script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">
-                <i class="fas fa-lightbulb text-warning me-2"></i>
-                QMRE Lights
+<body class="homepage bg-brand-dark text-white overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 border-b border-white/10 backdrop-blur-sm" id="mainHeader" data-purpose="navigation-header">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="flex items-center space-x-2">
+                <div class="w-8 h-8 text-brand-gold">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1zM9 19h6v1H9v-1zm1 2h4v1h-4v-1z"></path></svg>
+                </div>
+                <span class="text-2xl font-serif font-bold tracking-tight text-white uppercase">QMRE <span class="text-brand-gold">Lights</span></span>
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-th-large me-1"></i>Categories
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-modern">
-                            <li><a class="dropdown-item" href="/category/chandeliers">
-                                <i class="fas fa-crown me-2"></i>Chandeliers
-                            </a></li>
-                            <li><a class="dropdown-item" href="/category/ceiling-lights">
-                                <i class="fas fa-lightbulb me-2"></i>Ceiling Lights
-                            </a></li>
-                            <li><a class="dropdown-item" href="/category/rope-lights">
-                                <i class="fas fa-lightbulb me-2"></i>Rope Lights
-                            </a></li>
-                            <li><a class="dropdown-item" href="/category/switches">
-                                <i class="fas fa-toggle-on me-2"></i>Switches
-                            </a></li>
-                            <li><a class="dropdown-item" href="/category/bulbs">
-                                <i class="fas fa-lightbulb me-2"></i>LED Bulbs
-                            </a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/category/all">
-                                <i class="fas fa-th me-2"></i>View All Categories
-                            </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="cartIcon" data-bs-toggle="modal" data-bs-target="#cartModal">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="badge bg-danger" id="cartCount">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">
-                        Best <span class="text-warning">LED Lights Price in Pakistan</span> - 
-                        Premium LED Light Collection
-                    </h1>
-                    <p class="lead mb-4">
-                        Discover affordable LED lights price in Pakistan! Shop our premium collection of LED bulbs, ceiling lights, rope lights, and chandeliers. Energy-efficient LED lighting solutions with fast delivery across Pakistan. Transform your home with our stunning LED light collection at unbeatable prices.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#products" class="btn btn-warning btn-lg">
-                            <i class="fas fa-shopping-cart me-2"></i>Shop Now
-                        </a>
-                        <a href="#contact" class="btn btn-outline-dark btn-lg">
-                            <i class="fab fa-whatsapp me-2"></i>WhatsApp Order
-                        </a>
+            <nav class="hidden lg:flex space-x-8 text-sm font-medium uppercase tracking-wider" data-purpose="main-nav">
+                <a class="text-brand-gold hover:text-white transition-custom" href="#home">Home</a>
+                <div class="relative group cursor-pointer">
+                    <span class="hover:text-brand-gold transition-custom flex items-center">Categories
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </span>
+                    <div class="absolute hidden group-hover:block bg-brand-card w-48 top-full mt-2 p-4 shadow-xl border border-white/5 z-50">
+                        <a class="block py-2 hover:text-brand-gold" href="/category/chandeliers">Chandeliers</a>
+                        <a class="block py-2 hover:text-brand-gold" href="/category/ceiling-lights">Ceiling Lights</a>
+                        <a class="block py-2 hover:text-brand-gold" href="/category/rope-lights">Rope Lights</a>
+                        <a class="block py-2 hover:text-brand-gold" href="/category/switches">Smart Switches</a>
+                        <a class="block py-2 hover:text-brand-gold" href="/category/bulbs">LED Bulbs</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                             alt="Elegant LED Chandelier" class="img-fluid rounded-3 shadow">
-                    </div>
+                <a class="hover:text-brand-gold transition-custom" href="/category/all">Shop</a>
+                <a class="hover:text-brand-gold transition-custom" href="#about">About</a>
+                <a class="hover:text-brand-gold transition-custom" href="#contact">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4 md:space-x-6">
+                <button class="hidden sm:block hover:text-brand-gold transition-custom" aria-label="Search">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+                <button class="relative hover:text-brand-gold transition-custom" id="cartIcon" data-bs-toggle="modal" data-bs-target="#cartModal" aria-label="Shopping cart">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    <span class="absolute -top-2 -right-2 bg-brand-gold text-brand-dark text-[10px] font-bold px-1.5 py-0.5 rounded-full" id="cartCount">0</span>
+                </button>
+                <button class="lg:hidden hover:text-brand-gold transition-custom" id="mobileMenuBtn" aria-label="Open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav class="hidden lg:hidden border-t border-white/10 bg-brand-dark" id="mobileNav">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col space-y-3 text-sm font-medium uppercase tracking-wider">
+                <a class="text-brand-gold py-2" href="#home">Home</a>
+                <a class="hover:text-brand-gold py-2" href="/category/chandeliers">Chandeliers</a>
+                <a class="hover:text-brand-gold py-2" href="/category/ceiling-lights">Ceiling Lights</a>
+                <a class="hover:text-brand-gold py-2" href="/category/rope-lights">Rope Lights</a>
+                <a class="hover:text-brand-gold py-2" href="/category/switches">Smart Switches</a>
+                <a class="hover:text-brand-gold py-2" href="/category/all">Shop</a>
+                <a class="hover:text-brand-gold py-2" href="#about">About</a>
+                <a class="hover:text-brand-gold py-2" href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative flex items-center overflow-hidden" data-purpose="hero-banner">
+        <div class="absolute inset-0 z-0 hero-carousel" data-purpose="hero-carousel">
+            <img alt="Luxury living room with crystal chandelier" class="hero-slide is-active" src="assets/images/hero/hero-1.png"/>
+            <img alt="Opulent dining room with linear pendant chandelier" class="hero-slide" src="assets/images/hero/hero-2.png"/>
+            <img alt="Grand hotel lobby staircase with cascading chandelier" class="hero-slide" src="assets/images/hero/hero-3.png"/>
+            <div class="absolute inset-0 hero-scrim"></div>
+            <div class="hero-dots" role="tablist" aria-label="Hero slides">
+                <button class="hero-dot is-active" type="button" aria-label="Go to slide 1"></button>
+                <button class="hero-dot" type="button" aria-label="Go to slide 2"></button>
+                <button class="hero-dot" type="button" aria-label="Go to slide 3"></button>
+            </div>
+        </div>
+        <div class="w-full max-w-7xl mx-auto px-6 relative z-10 pt-24 pb-12">
+            <div class="max-w-2xl text-left">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-bold leading-tight uppercase mb-4">
+                    Illuminate Your World <br>With <span class="text-brand-gold">Elegance</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg">
+                    Discover Premium LED Lighting Solutions at Unbeatable Prices in Pakistan.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="/category/all" class="px-8 py-3 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-white transition-custom inline-block">Shop The Collection</a>
+                    <a href="/category/all" class="px-8 py-3 border border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-custom inline-block">View Catalog</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Showcase Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Featured Products</h2>
-                <p class="lead text-muted">Discover our most popular and latest additions</p>
+    <!-- Featured Categories -->
+    <section class="py-20 bg-brand-dark" data-purpose="category-filters">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4 mb-16" id="categoryPills">
+                <button class="category-pill px-6 py-2 rounded-full bg-brand-gold text-brand-dark font-semibold text-sm uppercase" data-filter="all">All</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-gray-600 hover:border-brand-gold transition-custom text-sm uppercase" data-filter="chandeliers">Chandeliers</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-gray-600 hover:border-brand-gold transition-custom text-sm uppercase" data-filter="ceiling-lights">Ceiling Lights</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-gray-600 hover:border-brand-gold transition-custom text-sm uppercase" data-filter="rope-lights">Rope Lights</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-gray-600 hover:border-brand-gold transition-custom text-sm uppercase" data-filter="switches">Smart Switches</button>
             </div>
-            
-            <!-- Product Showcase Tabs -->
-            <div class="showcase-tabs mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="tab-navigation">
-                            <button class="tab-btn active" onclick="switchShowcaseTab('trending')">
-                                <i class="fas fa-fire me-2"></i>
-                                <span>Trending Now</span>
-                                <div class="tab-indicator"></div>
-                            </button>
-                            <button class="tab-btn" onclick="switchShowcaseTab('new-arrivals')">
-                                <i class="fas fa-star me-2"></i>
-                                <span>New Arrivals</span>
-                                <div class="tab-indicator"></div>
-                            </button>
-                        </div>
-                    </div>
+
+            <h2 class="text-4xl font-serif text-brand-gold text-center mb-12">Category</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="categoryCards">
+                <div class="category-card hover-gold-border group relative bg-brand-card p-4 text-center cursor-pointer transition-custom" data-category="chandeliers" onclick="navigateToCategory('chandeliers')">
+                    <img alt="Chandelier" class="w-full aspect-square object-cover mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXF7Nnk91fDNF8ajutsQYTnWwY2d8zCiJh7trKw3sNUpQWojXIfk-WOwq9sZ0GycDzn_uYjJG_CPQVsruMqjE4OdzlNTDZzaMSX07sa5ISS79uf3bHvcAinc0JZTDGR9ySypy8BTuPghKtImts3996r9bQ9dZuudniueAcpLfAbj952-7puAGSeuUNXvtHX7Axm0kUK009BSJmLqN7-2i0JIzMLFtS5t03KP-LhOYEvnNmqpieiMHl0EK4FQek8bB52WXF-3B7rcQ"/>
+                    <h3 class="font-serif text-lg text-brand-gold mb-1">Chandeliers</h3>
+                    <p class="text-xs text-gray-400">Luxury Pendant Lights</p>
                 </div>
-            </div>
-            
-            <!-- Showcase Filters -->
-            <div class="showcase-filters mb-5">
-                <div class="row g-3">
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-select" id="showcaseCategoryFilter">
-                            <option value="">All Categories</option>
-                            <option value="chandeliers">Chandeliers</option>
-                            <option value="ceiling-lights">Ceiling Lights</option>
-                            <option value="rope-lights">Rope Lights</option>
-                            <option value="switches">Switches</option>
-                            <option value="bulbs">LED Bulbs</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-select" id="showcasePriceFilter">
-                            <option value="">All Prices</option>
-                            <option value="0-5000">Under Rs. 5,000</option>
-                            <option value="5000-15000">Rs. 5,000 - 15,000</option>
-                            <option value="15000-30000">Rs. 15,000 - 30,000</option>
-                            <option value="30000+">Above Rs. 30,000</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-select" id="showcaseSortFilter">
-                            <option value="">Sort By</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
-                            <option value="name">Name: A to Z</option>
-                            <option value="popular">Most Popular</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="search-wrapper">
-                            <input type="text" class="form-control" id="showcaseSearchFilter" placeholder="Search products...">
-                            <i class="fas fa-search search-icon"></i>
-                        </div>
-                    </div>
+                <div class="category-card hover-gold-border group relative bg-brand-card p-4 text-center cursor-pointer transition-custom" data-category="ceiling-lights" onclick="navigateToCategory('ceiling-lights')">
+                    <img alt="Ceiling lights" class="w-full aspect-square object-cover mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoC5KyRvCAYy9oprzx9lRul7hDZetrVa5rOUnRFORGpoih69n-kSDpP_Z3xpibFZ2njXGNi_8qMf9nspPf8wLu0xAQg7-jO_9Vv-QKWfN9GTkNUkPCPVwcFdTw6PWkwRG3OM4oNW8a79DilKVRAYHrGonGrKycUtoB8K6EDFzkSPGeg25EOhN-n8tTskllr-0LWMqVeRSR84j6C4mIwQLCID_mIkBh2PGWg9R2818Bula51E-y8eXy4lUTCETjLvU1ai8cdFBhCoE"/>
+                    <h3 class="font-serif text-lg text-brand-gold mb-1">Ceiling Lights</h3>
+                    <p class="text-xs text-gray-400">Modern Flush Mounts</p>
                 </div>
-            </div>
-            
-            <!-- Showcase Products Grid -->
-            <div class="showcase-products">
-                <div class="row g-4" id="showcaseProductsGrid">
-                    <!-- Products will be loaded dynamically -->
+                <div class="category-card hover-gold-border group relative bg-brand-card p-4 text-center cursor-pointer transition-custom" data-category="rope-lights" onclick="navigateToCategory('rope-lights')">
+                    <img alt="Rope lights" class="w-full aspect-square object-cover mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIqxG13VpRgzsUs2xNS8p12KctMMORbVVvUaLxzdG0yPInuUBx96q1QjNj4JPFZnWpRFm1ZlIqMIWVEt-es_SNDw-65koQmPgDK7i3lBM7w6ocrGLF70Pro2P5KGVlvGwkT2yGQLQMgqiPFzXb-1L6jc8lmY4eb5_hTHUnao9MzJL6dslXEIgfrXZwj95bRYvkCVlyT9dfZIVKJ9bBckkEYHtcPHILaELZ-I1qtEt1Qo0gVtaro4GZaA6pYFz59Mp6_Ucr3UAooyg"/>
+                    <h3 class="font-serif text-lg text-brand-gold mb-1">Rope Lights</h3>
+                    <p class="text-xs text-gray-400">Stylish LED Strips</p>
                 </div>
-                
-                <!-- Load More Button -->
-                <div class="text-center mt-5">
-                    <button class="btn btn-outline-primary btn-lg" id="loadMoreBtn" onclick="loadMoreProducts()">
-                        <i class="fas fa-plus me-2"></i>Load More Products
-                    </button>
+                <div class="category-card hover-gold-border group relative bg-brand-card p-4 text-center cursor-pointer transition-custom" data-category="switches" onclick="navigateToCategory('switches')">
+                    <img alt="Smart switches" class="w-full aspect-square object-cover mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWhANS61Z_gRpW4su8i6XOa_l80Bf1mMD_lbgLRI5oDmJfDtXPg-Q92d8TI1Kd-uzvj60EQQ1iTxOUaHOjYCc7aPjneXtI4siRUSK5oBLZEHnhdJbHkpkvI7rjvavECaZSjPgT6GfY_DfLugrSxvrGMi6nKXFk3-o9mXKTRddcdS9CdWW6WnVKTunPuIJ4nQZPQwH3Lr8JzfA0kDD9Ic9YY0u9263-81HLts9oyeqPaLG7bjpBIapPQWilhto54EDEeWGyeSpAl9w"/>
+                    <h3 class="font-serif text-lg text-brand-gold mb-1">Smart Switches</h3>
+                    <p class="text-xs text-gray-400">Home Control</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Celebrity Endorsements Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Celebrity Endorsements</h2>
-                <p class="lead text-muted">Trusted by celebrities and influencers</p>
+    <!-- Sector Solutions -->
+    <section class="py-20 bg-brand-dark" data-purpose="sector-solutions">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-serif text-brand-gold text-center mb-6">Sector Solutions</h2>
+            <div class="flex justify-center mb-12">
+                <div class="flex border border-gray-700 rounded overflow-hidden" id="sectorTabs">
+                    <button type="button" class="sector-tab px-6 md:px-8 py-3 bg-gray-800 text-brand-gold font-semibold text-xs uppercase border-r border-gray-700" data-sector="residential">Residential</button>
+                    <button type="button" class="sector-tab px-6 md:px-8 py-3 hover:bg-gray-800 transition-custom text-gray-400 text-xs uppercase border-r border-gray-700" data-sector="commercial">Commercial</button>
+                    <button type="button" class="sector-tab px-6 md:px-8 py-3 hover:bg-gray-800 transition-custom text-gray-400 text-xs uppercase" data-sector="industrial">Industrial</button>
+                </div>
             </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="endorsement-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
-                             alt="Celebrity 1" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
-                        <h5 class="mb-2">Ahmed Ali</h5>
-                        <p class="text-muted mb-3">TV Host & Interior Designer</p>
-                        <p class="mb-3">"QMRE Lights has transformed my home with their stunning chandeliers. The quality and design are unmatched!"</p>
-                        <div class="rating">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
+
+            <div id="sectorPanels">
+                <!-- Residential -->
+                <div class="sector-panel" data-sector="residential">
+                    <div class="relative h-[420px] md:h-[520px] group overflow-hidden hover-gold-border transition-custom">
+                        <img alt="Residential lighting solutions" class="w-full h-full object-cover" src="/assets/images/sectors/sector-residential.png" loading="lazy"/>
+                        <div class="absolute inset-0 bg-black/55 p-8 md:p-12 flex flex-col justify-end items-start text-left">
+                            <h3 class="text-3xl md:text-4xl font-serif text-brand-gold mb-4">Residential</h3>
+                            <p class="text-sm text-gray-300 mb-6 max-w-md">Bring warmth and comfort to your home with our elegant and decorative indoor lighting solutions.</p>
+                            <a href="/category/chandeliers" class="px-8 py-2 bg-brand-gold text-brand-dark font-bold uppercase text-xs hover:bg-white transition-custom inline-block">Discover Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="endorsement-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
-                             alt="Celebrity 2" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
-                        <h5 class="mb-2">Fatima Khan</h5>
-                        <p class="text-muted mb-3">Fashion Influencer</p>
-                        <p class="mb-3">"I love how QMRE Lights combines elegance with modern technology. Their LED solutions are perfect for any space."</p>
-                        <div class="rating">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
+
+                <!-- Commercial -->
+                <div class="sector-panel hidden" data-sector="commercial">
+                    <div class="relative h-[420px] md:h-[520px] group overflow-hidden hover-gold-border transition-custom">
+                        <img alt="Commercial lighting solutions" class="w-full h-full object-cover" src="/assets/images/sectors/sector-commercial.png" loading="lazy"/>
+                        <div class="absolute inset-0 bg-black/55 p-8 md:p-12 flex flex-col justify-end items-end text-right">
+                            <h3 class="text-3xl md:text-4xl font-serif text-brand-gold mb-4">Commercial</h3>
+                            <p class="text-sm text-gray-300 mb-6 max-w-md">Brighten your retail space and showrooms with functional, high-intensity LED solutions built for long-term use.</p>
+                            <a href="/category/ceiling-lights" class="px-8 py-2 bg-brand-gold text-brand-dark font-bold uppercase text-xs hover:bg-white transition-custom inline-block">Discover Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="endorsement-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
-                             alt="Celebrity 3" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
-                        <h5 class="mb-2">Muhammad Hassan</h5>
-                        <p class="text-muted mb-3">Architect & Designer</p>
-                        <p class="mb-3">"As an architect, I appreciate the attention to detail in QMRE's lighting designs. They're my go-to choice for projects."</p>
-                        <div class="rating">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
+
+                <!-- Industrial -->
+                <div class="sector-panel hidden" data-sector="industrial">
+                    <div class="relative h-[420px] md:h-[520px] group overflow-hidden hover-gold-border transition-custom">
+                        <img alt="Industrial lighting solutions" class="w-full h-full object-cover" src="/assets/images/sectors/sector-industrial.png" loading="lazy"/>
+                        <div class="absolute inset-0 bg-black/55 p-8 md:p-12 flex flex-col justify-center items-center text-center">
+                            <h3 class="text-3xl md:text-4xl font-serif text-brand-gold mb-4">Industrial</h3>
+                            <p class="text-sm text-gray-300 mb-6 max-w-2xl">High-performance LED solutions for warehouses and factories, ensuring a safe and productive environment.</p>
+                            <a href="/category/rope-lights" class="px-8 py-2 bg-brand-gold text-brand-dark font-bold uppercase text-xs hover:bg-white transition-custom inline-block">Discover Now</a>
                         </div>
                     </div>
                 </div>
@@ -329,571 +242,159 @@
         </div>
     </section>
 
-    <!-- Category Navigation Section -->
-    <section class="py-5 bg-gradient-primary">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3 text-white">Shop by Category</h2>
-                <p class="lead text-white-50">Discover our complete collection</p>
-            </div>
-            
-            <!-- Category Cards Grid -->
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="category-card-modern" onclick="navigateToCategory('chandeliers')">
-                        <div class="category-icon">
-                            <i class="fas fa-crown"></i>
-                        </div>
-                        <div class="category-content">
-                            <h4>Chandeliers</h4>
-                            <p>Elegant lighting masterpieces</p>
-                            <span class="category-count">24 Products</span>
-                        </div>
-                        <div class="category-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
+    <!-- Why Choose Us -->
+    <section id="about" class="py-24 bg-[#141414]" data-purpose="features">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif text-brand-gold mb-16">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 border border-brand-gold rounded-full flex items-center justify-center mb-6 text-brand-gold">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
                     </div>
+                    <h4 class="text-xl font-serif text-brand-gold mb-4">Energy Efficient</h4>
+                    <p class="text-sm text-gray-400">Save on energy costs with our high efficiency LED lighting solutions.</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="category-card-modern" onclick="navigateToCategory('ceiling-lights')">
-                        <div class="category-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="category-content">
-                            <h4>Ceiling Lights</h4>
-                            <p>Modern ceiling lighting solutions</p>
-                            <span class="category-count">28 Products</span>
-                        </div>
-                        <div class="category-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 border border-brand-gold rounded-full flex items-center justify-center mb-6 text-brand-gold">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
                     </div>
+                    <h4 class="text-xl font-serif text-brand-gold mb-4">Long Lifespan</h4>
+                    <p class="text-sm text-gray-400">Our lights are built to last, providing consistent performance for years.</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="category-card-modern" onclick="navigateToCategory('rope-lights')">
-                        <div class="category-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="category-content">
-                            <h4>Rope Lights</h4>
-                            <p>Flexible LED solutions</p>
-                            <span class="category-count">18 Products</span>
-                        </div>
-                        <div class="category-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 border border-brand-gold rounded-full flex items-center justify-center mb-6 text-brand-gold">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="category-card-modern" onclick="navigateToCategory('switches')">
-                        <div class="category-icon">
-                            <i class="fas fa-toggle-on"></i>
-                        </div>
-                        <div class="category-content">
-                            <h4>Switches</h4>
-                            <p>Smart control systems</p>
-                            <span class="category-count">12 Products</span>
-                        </div>
-                        <div class="category-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Second Row -->
-            <div class="row g-4 mt-3">
-                <div class="col-lg-3 col-md-6">
-                    <div class="category-card-modern" onclick="navigateToCategory('bulbs')">
-                        <div class="category-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="category-content">
-                            <h4>LED Bulbs</h4>
-                            <p>Energy efficient lighting</p>
-                            <span class="category-count">32 Products</span>
-                        </div>
-                        <div class="category-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
+                    <h4 class="text-xl font-serif text-brand-gold mb-4">Durability</h4>
+                    <p class="text-sm text-gray-400">Tested and certified lighting fixtures that withstand time.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LED Bulb Price in Pakistan Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">LED Bulb Price in Pakistan - Best Deals</h2>
-                <p class="lead text-muted">Affordable LED bulbs with premium quality and energy efficiency</p>
+    <!-- Proud Customers -->
+    <section class="py-20 bg-brand-dark" data-purpose="partners-section">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif text-brand-gold mb-12">Our Proud Customers</h2>
+            <div class="logo-marquee" data-purpose="customers-marquee">
+                <div class="logo-marquee__track">
+                    <!-- Set 1 -->
+                    <span class="logo-marquee__item">Bahria Town</span>
+                    <span class="logo-marquee__item">DHA</span>
+                    <span class="logo-marquee__item">Pearl Continental</span>
+                    <span class="logo-marquee__item">Serena Hotels</span>
+                    <span class="logo-marquee__item">Lucky Cement</span>
+                    <span class="logo-marquee__item">Engro</span>
+                    <span class="logo-marquee__item">Nestl&eacute; Pakistan</span>
+                    <span class="logo-marquee__item">Packages Mall</span>
+                    <span class="logo-marquee__item">Emaar Pakistan</span>
+                    <span class="logo-marquee__item">Habib Construction</span>
+                    <!-- Set 2 (duplicate for seamless loop) -->
+                    <span class="logo-marquee__item" aria-hidden="true">Bahria Town</span>
+                    <span class="logo-marquee__item" aria-hidden="true">DHA</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Pearl Continental</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Serena Hotels</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Lucky Cement</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Engro</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Nestl&eacute; Pakistan</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Packages Mall</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Emaar Pakistan</span>
+                    <span class="logo-marquee__item" aria-hidden="true">Habib Construction</span>
+                </div>
             </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-8">
-                    <div class="price-content bg-white p-4 rounded-3 shadow-sm">
-                        <h3 class="mb-4">Why Choose Our LED Bulbs in Pakistan?</h3>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="price-feature">
-                                    <h5><i class="fas fa-star text-warning me-2"></i>Best LED Bulb Price in Pakistan</h5>
-                                    <p>We offer the most competitive LED bulb prices in Pakistan without compromising on quality. Our LED bulbs start from as low as Rs. 150 and go up to Rs. 2,500 depending on wattage and features.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="price-feature">
-                                    <h5><i class="fas fa-bolt text-warning me-2"></i>Energy Efficient LED Light</h5>
-                                    <p>Save up to 80% on electricity bills with our energy-efficient LED light collection. Our LED bulbs consume significantly less power compared to traditional bulbs while providing brighter illumination.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="price-feature">
-                                    <h5><i class="fas fa-shipping-fast text-warning me-2"></i>Fast Delivery Across Pakistan</h5>
-                                    <p>Get your LED lights delivered to your doorstep anywhere in Pakistan within 2-3 business days. We provide free delivery on orders above Rs. 2,000.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="price-feature">
-                                    <h5><i class="fas fa-award text-warning me-2"></i>2-Year Warranty</h5>
-                                    <p>All our LED bulbs come with a comprehensive 2-year warranty, ensuring you get the best value for your investment in LED lighting.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="price-table bg-primary text-white p-4 rounded-3">
-                        <h4 class="mb-4">LED Bulb Price Range</h4>
-                        <div class="price-item">
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>7W LED Bulb</span>
-                                <strong>Rs. 150 - 250</strong>
-                            </div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>9W LED Bulb</span>
-                                <strong>Rs. 200 - 300</strong>
-                            </div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>12W LED Bulb</span>
-                                <strong>Rs. 300 - 450</strong>
-                            </div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>15W LED Bulb</span>
-                                <strong>Rs. 400 - 600</strong>
-                            </div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>20W LED Bulb</span>
-                                <strong>Rs. 550 - 800</strong>
-                            </div>
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>Smart LED Bulbs</span>
-                                <strong>Rs. 800 - 2,500</strong>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <a href="#contact" class="btn btn-warning">
-                                <i class="fab fa-whatsapp me-2"></i>Order Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="mt-12">
+                <a href="#about" class="px-10 py-2 border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition-custom text-sm font-bold inline-block">About Us</a>
             </div>
         </div>
     </section>
 
-    <!-- Ceiling Lights & Rope Lights Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="content-card">
-                        <h2 class="h3 mb-4">Premium Ceiling Lights Pakistan</h2>
-                        <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Ceiling Lights Pakistan" class="img-fluid rounded-3 mb-4">
-                        <p class="mb-3">Transform your home with our premium ceiling lights collection in Pakistan. From modern flush mount ceiling lights to elegant pendant ceiling lights, we offer the best ceiling light prices in Pakistan.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Modern LED ceiling lights starting from Rs. 1,200</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Smart ceiling lights with remote control</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Energy-efficient ceiling lighting solutions</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Professional installation service available</li>
-                        </ul>
-                        <a href="/category/ceiling-lights" class="btn btn-primary">
-                            <i class="fas fa-lightbulb me-2"></i>Shop Ceiling Lights
-                        </a>
+    <!-- Testimonials -->
+    <section class="py-24 bg-[#141414] overflow-hidden" data-purpose="testimonials">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif text-brand-gold mb-16">Celebrity Endorsements &amp; Client Testimonials</h2>
+            <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch md:items-center">
+                <div class="bg-brand-card p-10 pt-16 border border-white/5 max-w-lg relative mx-auto w-full">
+                    <div class="absolute -top-12 left-1/2 -translate-x-1/2">
+                        <img alt="Maya Saleem" class="w-24 h-24 rounded-full border-4 border-brand-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL23DB1zzlCQGmmYmXWoFKh6Ls1y3Q4H-_Vtf_NqASh3bJFr9I6gyOBvk_BO2yQYhNI4p6ZDdWX6KhQBhC6Xf5_HdW2QIPhHo8qjQYi-H_D3LL6WSCxiy2sbHnaPMI4aVj8mM0-fcq0o_baMuMDMjzB-heFfVl8rd4kKEXIS8DWpKjkO5R2lKdEbqMJPVOLegT08cSL-dwVN-b4bbraRFTNcWQa-H6_ov1JZ9qQ48eyssGHVHtNSa74mXfiETzIBLXu6ERSuyA3tc"/>
                     </div>
+                    <div class="mt-4 text-brand-gold flex justify-center space-x-1 mb-4">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"The new LED strip lights transformed my studio space. Exceptional quality and incredible customer service."</p>
+                    <h5 class="text-white font-bold uppercase tracking-widest text-sm">Maya Saleem</h5>
+                    <p class="text-xs text-brand-gold">Interior Designer</p>
                 </div>
-                <div class="col-lg-6">
-                    <div class="content-card">
-                        <h2 class="h3 mb-4">LED Rope Light Price in Pakistan</h2>
-                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Rope Light Pakistan" class="img-fluid rounded-3 mb-4">
-                        <p class="mb-3">Create stunning ambiance with our flexible LED rope lights. Perfect for decoration, outdoor lighting, and accent lighting. Best rope light prices in Pakistan with premium quality guaranteed.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Flexible LED rope lights from Rs. 300 per meter</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Waterproof outdoor rope lights available</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Multiple color options and effects</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Easy installation and cutting options</li>
-                        </ul>
-                        <a href="/category/rope-lights" class="btn btn-primary">
-                            <i class="fas fa-lightbulb me-2"></i>Shop Rope Lights
-                        </a>
+                <div class="bg-brand-card p-10 pt-16 border border-white/5 max-w-lg relative mx-auto w-full">
+                    <div class="absolute -top-12 left-1/2 -translate-x-1/2">
+                        <img alt="Haris Farooq" class="w-24 h-24 rounded-full border-4 border-brand-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMJfm13wOiHYUqM5nHYFOlTJUSkAMB12B8_6ll3qJ5Ly6GUGjuWIDKe1lWZaREk6X8mSR2tqdTQqhVGY4WB6y5Uq32QabRGWl3fJra4dbtcUIYZmDLYuvRup44XksTFSU115E6bPerTGjW1X9H8R6xqHanUV9XWNQ1C2jBXLA3NLrQqpJl1IExfPx5u8_j27j-JboQM0EakXd9TXlTx4HtiHlocZJFqDgzz5YhEMQ71U_OMqkvNwnzjq9SjDtgQsCqY8dyzgFt8yQ"/>
                     </div>
+                    <div class="mt-4 text-brand-gold flex justify-center space-x-1 mb-4">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"Fast delivery and the products were exactly as described. The chandeliers are the talk of our new office."</p>
+                    <h5 class="text-white font-bold uppercase tracking-widest text-sm">Haris Farooq</h5>
+                    <p class="text-xs text-brand-gold">CEO, Tech Firm</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold mb-4">Why Choose QMRE Lights?</h2>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="fas fa-bolt text-warning fa-2x mb-3"></i>
-                                <h5>Energy Efficient</h5>
-                                <p class="text-muted">Save up to 80% on electricity bills with our LED technology</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="fas fa-award text-warning fa-2x mb-3"></i>
-                                <h5>Premium Quality</h5>
-                                <p class="text-muted">Certified products with 2-year warranty</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="fas fa-shipping-fast text-warning fa-2x mb-3"></i>
-                                <h5>Fast Delivery</h5>
-                                <p class="text-muted">Free delivery across Pakistan within 3-5 days</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="fas fa-headset text-warning fa-2x mb-3"></i>
-                                <h5>24/7 Support</h5>
-                                <p class="text-muted">Expert customer support via WhatsApp</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="About QMRE Lights" class="img-fluid rounded-3 shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Payment Methods Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Secure Payment Options</h2>
-                <p class="lead text-muted">Choose your preferred payment method</p>
-            </div>
-            
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="payment-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <i class="fas fa-mobile-alt text-primary fa-3x mb-3"></i>
-                        <h4>JazzCash</h4>
-                        <p class="text-muted">Pay securely with JazzCash mobile payments</p>
-                        <button class="btn btn-primary" onclick="showPaymentModal('JazzCash')">
-                            Pay with JazzCash
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="payment-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <i class="fas fa-wallet text-success fa-3x mb-3"></i>
-                        <h4>EasyPaisa</h4>
-                        <p class="text-muted">Quick and easy payments with EasyPaisa</p>
-                        <button class="btn btn-success" onclick="showPaymentModal('EasyPaisa')">
-                            Pay with EasyPaisa
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="payment-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <i class="fab fa-whatsapp text-success fa-3x mb-3"></i>
-                        <h4>WhatsApp Order</h4>
-                        <p class="text-muted">Place your order directly via WhatsApp</p>
-                        <button class="btn btn-success" onclick="openWhatsApp()">
-                            Order on WhatsApp
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Lighting Tips & Trends</h2>
-                <p class="lead text-muted">Stay updated with the latest in lighting design</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <article class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="LED Lighting Trends" class="img-fluid rounded-3 mb-3">
-                        <div class="blog-content">
-                            <h5 class="fw-bold">Top LED Lighting Trends for 2024</h5>
-                            <p class="text-muted">Discover the latest trends in LED lighting that are transforming modern homes...</p>
-                            <a href="#" class="text-warning text-decoration-none">Read More →</a>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <article class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Energy Saving Tips" class="img-fluid rounded-3 mb-3">
-                        <div class="blog-content">
-                            <h5 class="fw-bold">How to Save Energy with LED Lights</h5>
-                            <p class="text-muted">Learn practical tips to maximize energy savings with your LED chandeliers...</p>
-                            <a href="#" class="text-warning text-decoration-none">Read More →</a>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <article class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Chandelier Installation" class="img-fluid rounded-3 mb-3">
-                        <div class="blog-content">
-                            <h5 class="fw-bold">Complete Guide to Chandelier Installation</h5>
-                            <p class="text-muted">Step-by-step guide to safely install your new LED chandelier...</p>
-                            <a href="#" class="text-warning text-decoration-none">Read More →</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Reviews Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">What Our Clients Say</h2>
-                <p class="lead text-muted">Real reviews from satisfied customers</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="review-card bg-white p-4 rounded-3 shadow-sm">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80" 
-                                 alt="Client 1" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h6 class="mb-1">Ahmed Khan</h6>
-                                <small class="text-muted">Lahore</small>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="mb-0">"Amazing quality and beautiful design! The chandelier looks perfect in our living room. Fast delivery and excellent customer service."</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="review-card bg-white p-4 rounded-3 shadow-sm">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80" 
-                                 alt="Client 2" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h6 class="mb-1">Fatima Ali</h6>
-                                <small class="text-muted">Karachi</small>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="mb-0">"The LED rope lights are fantastic! They've completely transformed our outdoor space. Energy efficient and very durable."</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="review-card bg-white p-4 rounded-3 shadow-sm">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80" 
-                                 alt="Client 3" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h6 class="mb-1">Muhammad Hassan</h6>
-                                <small class="text-muted">Islamabad</small>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="mb-0">"Professional service from start to finish. The installation team was skilled and the final result exceeded our expectations."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="newsletter-section bg-primary text-white p-5 rounded-3">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <h3 class="mb-3">Stay Updated with QMRE Lights</h3>
-                        <p class="mb-0">Subscribe to our newsletter for exclusive offers, new product launches, and lighting tips delivered to your inbox.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="input-group">
-                            <input type="email" class="form-control" id="homepageNewsletterEmail" placeholder="Enter your email address">
-                            <button class="btn btn-warning" onclick="subscribeHomepageNewsletter()">
-                                <i class="fas fa-paper-plane me-2"></i>Subscribe
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Get in Touch</h2>
-                <p class="lead text-muted">Ready to illuminate your space? Contact us today!</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="fab fa-whatsapp text-success fa-2x me-3"></i>
-                            <div>
-                                <h5 class="mb-1">WhatsApp Order</h5>
-                                <p class="mb-0 text-muted">+92 300 1234567</p>
-                            </div>
-                        </div>
-                        
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="fas fa-envelope text-warning fa-2x me-3"></i>
-                            <div>
-                                <h5 class="mb-1">Email</h5>
-                                <p class="mb-0 text-muted">info@qmrelights.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="fas fa-map-marker-alt text-danger fa-2x me-3"></i>
-                            <div>
-                                <h5 class="mb-1">Address</h5>
-                                <p class="mb-0 text-muted">Lahore, Pakistan</p>
-                            </div>
-                        </div>
-                        
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-clock text-info fa-2x me-3"></i>
-                            <div>
-                                <h5 class="mb-1">Business Hours</h5>
-                                <p class="mb-0 text-muted">Mon-Sat: 9:00 AM - 8:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Your Phone" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-warning btn-lg w-100">
-                            <i class="fas fa-paper-plane me-2"></i>Send Message
-                        </button>
-                    </form>
-                </div>
+            <div class="flex justify-center space-x-2 mt-12">
+                <div class="w-3 h-3 bg-brand-gold rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-600 rounded-full"></div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <h5 class="mb-3">
-                        <i class="fas fa-lightbulb text-warning me-2"></i>QMRE Lights
-                    </h5>
-                    <p class="mb-3">Your trusted partner for premium LED lighting solutions. Quality, innovation, and style in every product.</p>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+    <footer id="contact" class="bg-brand-dark pt-20 pb-10 border-t border-white/5" data-purpose="footer">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-widest mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a class="hover:text-brand-gold transition-custom" href="#home">Home</a></li>
+                        <li><a class="hover:text-brand-gold transition-custom" href="#about">About</a></li>
+                        <li><a class="hover:text-brand-gold transition-custom" href="/category/all">Shop</a></li>
+                        <li><a class="hover:text-brand-gold transition-custom" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-widest mb-6">Categories</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a class="hover:text-brand-gold transition-custom" href="/category/chandeliers">Chandeliers</a></li>
+                        <li><a class="hover:text-brand-gold transition-custom" href="/category/ceiling-lights">Ceiling Lights</a></li>
+                        <li><a class="hover:text-brand-gold transition-custom" href="/category/rope-lights">Rope Lights</a></li>
+                        <li><a class="hover:text-brand-gold transition-custom" href="/category/switches">Smart Switches</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-widest mb-6">Company Info</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-brand-gold mr-3"><i class="fas fa-phone"></i></span> +92 300 1234567</li>
+                        <li class="flex items-start"><span class="text-brand-gold mr-3"><i class="fas fa-envelope"></i></span> info@qmrelights.com</li>
+                        <li class="flex items-start"><span class="text-brand-gold mr-3"><i class="fas fa-map-marker-alt"></i></span> Lahore, Pakistan</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-6">
+                        <a class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-brand-gold hover:text-brand-gold transition-custom" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-brand-gold hover:text-brand-gold transition-custom" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-brand-gold hover:text-brand-gold transition-custom" href="https://wa.me/923001234567" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <h6 class="mb-3">Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#home" class="text-white-50">Home</a></li>
-                        <li><a href="#products" class="text-white-50">Products</a></li>
-                        <li><a href="#about" class="text-white-50">About</a></li>
-                        <li><a href="#contact" class="text-white-50">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h6 class="mb-3">Categories</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="/category/chandeliers" class="text-white-50">Chandeliers</a></li>
-                        <li><a href="/category/ceiling-lights" class="text-white-50">Ceiling Lights</a></li>
-                        <li><a href="/category/rope-lights" class="text-white-50">Rope Lights</a></li>
-                        <li><a href="/category/switches" class="text-white-50">Switches</a></li>
-                        <li><a href="/category/bulbs" class="text-white-50">LED Bulbs</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h6 class="mb-3">Contact Info</h6>
-                    <p class="mb-2"><i class="fas fa-phone me-2"></i>+92 300 1234567</p>
-                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>info@qmrelights.com</p>
-                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Lahore, Pakistan</p>
-                    <h6 class="mb-3 mt-4">Office Hours</h6>
-                    <p class="mb-1"><i class="fas fa-clock me-2"></i>Monday - Friday: 9:00 AM - 7:00 PM</p>
-                    <p class="mb-1"><i class="fas fa-clock me-2"></i>Saturday: 10:00 AM - 6:00 PM</p>
-                    <p class="mb-1"><i class="fas fa-clock me-2"></i>Sunday: 12:00 PM - 5:00 PM</p>
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-widest mb-6">Newsletter</h4>
+                    <p class="text-sm text-gray-400 mb-4">Subscribe to get latest updates and offers.</p>
+                    <div class="flex">
+                        <input class="bg-transparent border border-gray-700 p-2 text-sm flex-grow focus:outline-none focus:border-brand-gold text-white" id="homepageNewsletterEmail" placeholder="Email Address" type="email"/>
+                        <button class="bg-brand-gold text-brand-dark px-4 font-bold hover:bg-white transition-custom" onclick="subscribeHomepageNewsletter()" aria-label="Subscribe">→</button>
+                    </div>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="text-center">
-                <p class="mb-0">&copy; 2024 QMRE Lights. All rights reserved.</p>
+            <div class="border-t border-white/5 pt-10 flex flex-wrap justify-between items-center text-xs uppercase tracking-widest text-gray-400 gap-4">
+                <div class="flex flex-wrap items-center gap-6 md:gap-12">
+                    <div class="flex items-center"><span class="text-brand-gold mr-2"><i class="fas fa-shield-alt"></i></span> Secure Payment</div>
+                    <div class="flex items-center"><span class="text-brand-gold mr-2"><i class="fas fa-lock"></i></span> Secure Checkout</div>
+                    <div class="flex items-center"><span class="text-brand-gold mr-2"><i class="fas fa-truck"></i></span> Fast Delivery</div>
+                </div>
+                <div>© 2026 QMRE Lights. All Rights Reserved.</div>
             </div>
         </div>
     </footer>
@@ -901,17 +402,13 @@
     <!-- Cart Modal -->
     <div class="modal fade" id="cartModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content homepage-modal">
                 <div class="modal-header">
-                    <h5 class="modal-title">
-                        <i class="fas fa-shopping-cart me-2"></i>Shopping Cart
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title"><i class="fas fa-shopping-cart me-2"></i>Shopping Cart</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="cartItems">
-                        <!-- Cart items will be loaded here -->
-                    </div>
+                    <div id="cartItems"></div>
                     <div id="emptyCart" class="text-center py-4" style="display: none;">
                         <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
                         <h5>Your cart is empty</h5>
@@ -921,11 +418,11 @@
                 <div class="modal-footer">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <div>
-                            <h5 class="mb-0">Total: <span id="cartTotal" class="text-primary">Rs. 0</span></h5>
+                            <h5 class="mb-0">Total: <span id="cartTotal" class="text-brand-gold">Rs. 0</span></h5>
                         </div>
                         <div>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
-                            <button type="button" class="btn btn-primary" id="checkoutBtn" onclick="proceedToCheckout()">
+                            <button type="button" class="btn btn-gold" id="checkoutBtn" onclick="proceedToCheckout()">
                                 <i class="fas fa-credit-card me-2"></i>Proceed to Checkout
                             </button>
                         </div>
@@ -938,10 +435,10 @@
     <!-- Payment Modal -->
     <div class="modal fade" id="paymentModal" tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content homepage-modal">
                 <div class="modal-header">
                     <h5 class="modal-title">Complete Your Payment</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     <div id="paymentForm">
@@ -969,7 +466,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-warning" onclick="processPayment()">
+                    <button type="button" class="btn btn-gold" onclick="processPayment()">
                         <i class="fas fa-credit-card me-2"></i>Process Payment
                     </button>
                 </div>
@@ -977,17 +474,15 @@
         </div>
     </div>
 
-    <!-- WhatsApp Float Button -->
+    <!-- WhatsApp Float -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/923001234567?text=Hi! I'm interested in your LED chandeliers. Can you help me?" 
-           target="_blank" class="whatsapp-btn">
+        <a href="https://wa.me/923001234567?text=Hi! I'm interested in your LED lighting collection. Can you help me?" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="script.js"></script>
+    <script type="module" src="hover-animations.js"></script>
 </body>
-</html> 
+</html>

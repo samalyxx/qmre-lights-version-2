@@ -68,14 +68,14 @@ body {
 
 /* Product Cards */
 .product-card {
-    transition: all 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    transform: none;
+    box-shadow: none;
 }
 
 .product-image {
@@ -92,7 +92,7 @@ body {
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.1);
+    transform: none;
 }
 
 /* Filters Section */
@@ -468,13 +468,12 @@ html {
 
 /* Category Cards */
 .category-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transform: none;
 }
 
 .category-card i {
@@ -482,7 +481,7 @@ html {
 }
 
 .category-card:hover i {
-    transform: scale(1.1);
+    transform: none;
 }
 
 /* Category Products Section */
@@ -959,4 +958,226 @@ html {
     .btn {
         display: none !important;
     }
-} 
+}
+
+/* Homepage (Tailwind redesign) */
+body.homepage {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 5rem;
+}
+
+body.homepage #mainHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+body.homepage h1,
+body.homepage h2,
+body.homepage h3,
+body.homepage h4,
+body.homepage .serif-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.transition-custom {
+    transition: all 0.3s ease-in-out;
+}
+
+.homepage-modal {
+    background-color: #242424;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.homepage-modal .modal-header,
+.homepage-modal .modal-footer {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.homepage-modal .form-control {
+    background-color: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.homepage-modal .form-control:focus {
+    background-color: #1a1a1a;
+    border-color: #d4af37;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.text-brand-gold {
+    color: #d4af37 !important;
+}
+
+body.homepage .whatsapp-float {
+    z-index: 1050;
+}
+
+/* Golden border glow on hover — no lift */
+.hover-gold-border {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transform: none !important;
+}
+
+.hover-gold-border:hover {
+    border-color: #d4af37;
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.45);
+    transform: none !important;
+}
+
+body.homepage .category-card.hover-gold-border:hover {
+    transform: none !important;
+}
+
+/* ===== Customers logo marquee (auto-scrolling carousel) ===== */
+.logo-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.logo-marquee__track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 4rem;
+    animation: logo-scroll 40s linear infinite;
+}
+
+.logo-marquee:hover .logo-marquee__track {
+    animation-play-state: paused;
+}
+
+.logo-marquee__item {
+    flex: 0 0 auto;
+    font-family: '"Playfair Display"', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #a0a0a0;
+    white-space: nowrap;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo-marquee__item:hover {
+    color: #d4af37;
+    transform: scale(1.06);
+}
+
+@keyframes logo-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-marquee__track {
+        animation: none;
+    }
+}
+
+/* Hero fills exactly one viewport — header overlays, no bleed into next section */
+#home[data-purpose="hero-banner"] {
+    height: 100dvh;
+    min-height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/* ===== Hero image carousel ===== */
+.hero-carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    will-change: opacity;
+}
+
+.hero-slide.is-active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Readability scrim: darker on the left where the headline sits */
+.hero-scrim {
+    z-index: 2;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 35%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+/* Keep headline content above the scrim and add legibility shadow */
+#home[data-purpose="hero-banner"] .relative.z-10 {
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 1.75rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.hero-dot {
+    width: 32px;
+    height: 4px;
+    border: 0;
+    padding: 0;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    transition: background 0.3s ease, width 0.3s ease;
+}
+
+.hero-dot:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.hero-dot.is-active {
+    background: #d4af37;
+    width: 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+        transition: opacity 0.4s ease-in-out;
+        transform: none;
+    }
+}

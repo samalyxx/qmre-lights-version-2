@@ -196,8 +196,19 @@ function initializeSmoothScrolling() {
 // Initialize navbar scroll effect
 function initializeNavbarScroll() {
     const navbar = document.querySelector('.navbar');
-    
+    const header = document.querySelector('#mainHeader');
+    const scrollTarget = navbar || header;
+    if (!scrollTarget) return;
+
     window.addEventListener('scroll', function() {
+        if (header) {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+            return;
+        }
         if (window.scrollY > 100) {
             navbar.classList.add('bg-white', 'shadow');
         } else {
@@ -489,6 +500,9 @@ function initializeEcommerce() {
     initializeShowcase();
     initializeFilters();
     initializeShowcaseFilters();
+    initializeCategoryPills();
+    initializeSectorTabs();
+    initializeMobileNav();
     initializeCart();
     initializeWishlist();
     initializeSearch();
@@ -525,8 +539,82 @@ function loadNewArrivals() {
 
 // Initialize showcase
 function initializeShowcase() {
-    // Start with trending products
     switchShowcaseTab('trending');
+}
+
+// Category pill filters on homepage
+function initializeCategoryPills() {
+    const pills = document.querySelectorAll('.category-pill');
+    const cards = document.querySelectorAll('.category-card');
+    if (!pills.length) return;
+
+    const activeClasses = ['bg-brand-gold', 'text-brand-dark', 'font-semibold'];
+    const inactiveClasses = ['border', 'border-gray-600'];
+
+    pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            pills.forEach(p => {
+                p.classList.remove(...activeClasses);
+                inactiveClasses.forEach(cls => p.classList.add(cls));
+            });
+            pill.classList.add(...activeClasses);
+            inactiveClasses.forEach(cls => pill.classList.remove(cls));
+
+            const filter = pill.dataset.filter;
+            cards.forEach(card => {
+                const show = filter === 'all' || card.dataset.category === filter;
+                card.style.display = show ? '' : 'none';
+            });
+        });
+    });
+}
+
+// Sector Solutions tab screens
+function initializeSectorTabs() {
+    const tabs = document.querySelectorAll('.sector-tab');
+    const panels = document.querySelectorAll('.sector-panel');
+    if (!tabs.length || !panels.length) return;
+
+    const activeTabClasses = ['bg-gray-800', 'text-brand-gold', 'font-semibold'];
+    const inactiveTabClasses = ['text-gray-400'];
+
+    function showSector(sector) {
+        tabs.forEach(tab => {
+            const isActive = tab.dataset.sector === sector;
+            if (isActive) {
+                tab.classList.add(...activeTabClasses);
+                tab.classList.remove(...inactiveTabClasses);
+            } else {
+                tab.classList.remove(...activeTabClasses);
+                tab.classList.add(...inactiveTabClasses);
+            }
+        });
+
+        panels.forEach(panel => {
+            panel.classList.toggle('hidden', panel.dataset.sector !== sector);
+        });
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => showSector(tab.dataset.sector));
+    });
+}
+
+// Mobile navigation toggle
+function initializeMobileNav() {
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (!menuBtn || !mobileNav) return;
+
+    menuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.add('hidden');
+        });
+    });
 }
 
 // Switch showcase tab
@@ -1024,7 +1112,7 @@ function createProductCard(product) {
     const card = document.createElement('div');
     card.className = 'col-lg-4 col-md-6';
     card.innerHTML = `
-        <div class="card product-card h-100 border-0 shadow-sm">
+        <div class="card product-card hover-gold-border h-100 border-0 shadow-sm">
             <div class="product-image">
                 <img src="${product.image}" class="card-img-top" alt="${product.name}">
                 <button class="wishlist-btn" onclick="toggleWishlist('${product._id || product.id}')" data-product-id="${product._id || product.id}">
@@ -1645,4 +1733,54 @@ window.processPayment = processPayment;
 window.shareProduct = shareProduct;
 window.addToCart = addToCart;
 window.processJazzCashPayment = processJazzCashPayment;
-window.processEasyPaisaPayment = processEasyPaisaPayment; 
+window.processEasyPaisaPayment = processEasyPaisaPayment;
+
+// Hero image carousel (auto-rotating with clickable dots)
+function initHeroCarousel() {
+    const carousel = document.querySelector('[data-purpose="hero-carousel"]');
+    if (!carousel) return;
+
+    const slides = Array.from(carousel.querySelectorAll('.hero-slide'));
+    const dots = Array.from(carousel.querySelectorAll('.hero-dot'));
+    if (slides.length <= 1) return;
+
+    let current = 0;
+    let timer = null;
+    const INTERVAL = 5000;
+
+    function goTo(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((s, i) => s.classList.toggle('is-active', i === current));
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+    }
+
+    function next() { goTo(current + 1); }
+
+    function start() {
+        stop();
+        timer = setInterval(next, INTERVAL);
+    }
+
+    function stop() {
+        if (timer) clearInterval(timer);
+        timer = null;
+    }
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            goTo(i);
+            start();
+        });
+    });
+
+    carousel.addEventListener('mouseenter', stop);
+    carousel.addEventListener('mouseleave', start);
+
+    start();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHeroCarousel);
+} else {
+    initHeroCarousel();
+}
